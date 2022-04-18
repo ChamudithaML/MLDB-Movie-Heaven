@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="#DC121212">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchAllMovies">
+
+
+        <Button
+            android:id="@+id/search_any_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="33dp"
+            android:backgroundTint="#FF9800"
+            android:text="Button"
+            app:layout_constraintBottom_toTopOf="@+id/show_movies"
+            app:layout_constraintEnd_toEndOf="@+id/input3"
+            app:layout_constraintStart_toStartOf="@+id/input3"
+            app:layout_constraintTop_toBottomOf="@+id/input3" />
+
+        <EditText
+            android:id="@+id/input3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="55dp"
+            android:ems="10"
+            android:hint="Search for Movie"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FF9800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/show_movies"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="499dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/search_any_btn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/search_any_btn"
+            app:layout_constraintTop_toBottomOf="@+id/search_any_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

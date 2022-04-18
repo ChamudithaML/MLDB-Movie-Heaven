@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:background="#DC121212">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchActor">
+
+        <EditText
+            android:id="@+id/actor_input"
+            android:layout_width="501dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="28dp"
+            android:ems="10"
+            android:hint="Type Actor Name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FF9800"
+            app:layout_constraintBottom_toTopOf="@+id/actor_btn2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/actor_btn2"
+            android:layout_width="501dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="23dp"
+            android:backgroundTint="#FF9800"
+            android:text="Search For Movie"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/actor_movie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actor_input" />
+
+        <TextView
+            android:id="@+id/actor_movie"
+            android:layout_width="501dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="188dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actor_btn2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

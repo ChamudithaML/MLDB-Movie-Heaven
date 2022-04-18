@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="#DC121212">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SearchMovie">
+
+
+        <EditText
+            android:id="@+id/edit_text1"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="45dp"
+            android:ems="10"
+            android:hint="Search for Movie"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FF9800"
+            app:layout_constraintBottom_toTopOf="@+id/ret_movie_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/ret_movie_btn"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="43dp"
+            android:backgroundTint="#FF9800"
+            android:text="Retreive Movie"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/save_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text1" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="500dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="29dp"
+            android:backgroundTint="#FF9800"
+            android:text="Save Movie to Database"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ret_movie_btn" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginBottom="82dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

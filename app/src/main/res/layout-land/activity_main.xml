@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DC121212"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#FF9800"
+        android:text="Add Movies to DB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/movie_btn"
+        app:layout_constraintEnd_toStartOf="@+id/all_movie_button"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="611dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/st" />
+
+    <Button
+        android:id="@+id/movie_btn"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="449dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="255dp"
+        android:backgroundTint="#FF9800"
+        android:text="Search For Movies"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/actor_btn"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="590dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="255dp"
+        android:backgroundTint="#FF9800"
+        android:text="Search for Actors"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sh_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="615dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="#673AB7"
+        android:text="Show DB"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/all_movie_button"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#FF9800"
+        android:text="Search All Movies"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/actor_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movie_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="435dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="445dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/in" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="529dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abt" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="342dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/snt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
